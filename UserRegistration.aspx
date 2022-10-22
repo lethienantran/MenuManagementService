@@ -13,14 +13,18 @@
             </td>
             <td>
                 <asp:TextBox ID="brandText" runat="server"></asp:TextBox>
+               
             </td>
         </tr>
         <tr>
             <td>
                 <asp:Label ID="usernameLabel" runat="server" Text="Username:"></asp:Label>
+
             </td>
             <td>
                 <asp:TextBox ID="usernameText" runat="server"></asp:TextBox>
+                
+               
             </td>
         </tr>
         <tr>
@@ -29,6 +33,7 @@
             </td>
             <td>
                 <asp:TextBox ID="passwordText" TextMode="Password" runat="server"></asp:TextBox>
+               
             </td>
         </tr>
         <tr>
@@ -37,11 +42,12 @@
             </td>
             <td>
                 <asp:TextBox ID="confirmPasswordText" TextMode="Password" runat="server"></asp:TextBox>
+                
             </td>
         </tr>
         <tr>
             <td align="center" colspan="2">
-                <asp:Label ID="messageLabel" runat="server"></asp:Label>
+                <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
                 <asp:Button ID="button" runat="server" Text="Register" OnClick="button_Click" />
             </td>

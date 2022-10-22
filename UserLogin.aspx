@@ -14,6 +14,7 @@
             </td>
             <td>
                 <asp:TextBox ID="usernameText" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="usernameText" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
                 &nbsp;&nbsp;
             </td>
         </tr>
