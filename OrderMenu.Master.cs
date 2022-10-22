@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace SelfOrderManagementSystem
 {
-    public partial class UserLogin : System.Web.UI.Page
+    public partial class OrderMenu : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void submitButton_Click(object sender, EventArgs e)
         {
 
         }

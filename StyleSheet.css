@@ -2,9 +2,16 @@
     border-radius: 10px;
     background-color: #f75340;
     border-style:none;
-    font-size:23px;
+    font-size:20px;
+}
+.adminHomeButton {
+    border-radius: 10px;
+    background-color: #f75340;
+    border-style: none;
+    font-size: 30px;
 }
 .userTable {
-
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
     border: 1px solid #ddd;
 }
