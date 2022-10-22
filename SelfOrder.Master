@@ -9,6 +9,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <div class="topNav">
+        <asp:Label runat="server" Font-Bold="true" Text="SELF SERVE" ID="brandNameLabel"></asp:Label>
+        &nbsp;
         <strong><a href="#">HOME</a></strong>
         <strong><a href="#">UPDATES</a></strong>
     </div>
