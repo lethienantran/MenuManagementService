@@ -11,52 +11,34 @@ namespace SelfOrderManagementSystem
 {
 
 
-    public partial class UserLogin
+    public partial class AdminHome
     {
 
         /// <summary>
-        /// usernameLabel control.
+        /// addButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label usernameLabel;
+        protected global::System.Web.UI.WebControls.Button addButton;
 
         /// <summary>
-        /// usernameText control.
+        /// changeButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usernameText;
+        protected global::System.Web.UI.WebControls.Button changeButton;
 
         /// <summary>
-        /// passwordLabel control.
+        /// deleteButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwordLabel;
-
-        /// <summary>
-        /// passwordText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordText;
-
-        /// <summary>
-        /// submitButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitButton;
+        protected global::System.Web.UI.WebControls.Button deleteButton;
     }
 }
