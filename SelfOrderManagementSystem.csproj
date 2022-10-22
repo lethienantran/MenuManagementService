@@ -67,12 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdminHome.aspx" />
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
+    <Content Include="App_Data\db.mdf" />
+    <Content Include="App_Data\db_log.ldf">
+      <DependentUpon>db.mdf</DependentUpon>
     </Content>
-    <Content Include="CustomerDisplay.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="MasterStyleSheet.css" />
     <Content Include="menuPage.aspx" />
@@ -84,20 +82,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminHome.aspx.cs">
-      <DependentUpon>AdminHome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminHome.aspx.designer.cs">
-      <DependentUpon>AdminHome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerDisplay.aspx.cs">
-      <DependentUpon>CustomerDisplay.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CustomerDisplay.aspx.designer.cs">
-      <DependentUpon>CustomerDisplay.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,7 +134,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OrderMenu.Master" />
     <None Include="packages.config" />
     <Content Include="SelfOrder.Master" />
     <None Include="Web.Debug.config">
