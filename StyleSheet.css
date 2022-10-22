@@ -7,10 +7,4 @@
 .userTable {
 
     border: 1px solid #ddd;
-    margin-left: auto;
-    margin-right: auto;
-}
-.userTable td
-{
-    text-align:center;
 }

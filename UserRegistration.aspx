@@ -6,7 +6,15 @@
     <div align="center">
         <h3>Create Account</h3>
     </div>
-        <table class="userTable">
+        <table class="userTable" align="center">
+            <tr>
+                <td>
+                    <asp:Label ID="brandLabel" runat="server" Text="Brand:"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="brandText" runat="server"></asp:TextBox>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <asp:Label ID="usernameLabel" runat="server" Text="Username:"></asp:Label>

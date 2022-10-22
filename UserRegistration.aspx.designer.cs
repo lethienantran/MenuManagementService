@@ -15,6 +15,24 @@ namespace SelfOrderManagementSystem
     {
 
         /// <summary>
+        /// brandLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label brandLabel;
+
+        /// <summary>
+        /// brandText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox brandText;
+
+        /// <summary>
         /// usernameLabel control.
         /// </summary>
         /// <remarks>
