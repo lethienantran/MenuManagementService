@@ -9,8 +9,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <div class="topNav">
-        <a href="#">HOME</a>
-        <a href="#">UPDATES</a>
+        <strong><a href="#">HOME</a></strong>
+        <strong><a href="#">UPDATES</a></strong>
     </div>
 </head>
 <body>

@@ -1,13 +1,16 @@
 ﻿body {
-    font-family: "Verdana",sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 22px;
     
 }
 .topNav a{
     text-decoration:none;
-    color:white;
+    color:black;
 }
 .topNav {
-    background-color:black;
-    height:60px;
+    height: 30px;
+    padding-top: 2%;
+}
+.topNav a:hover{
+
 }
