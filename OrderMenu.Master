@@ -5,8 +5,12 @@
 <html>
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="OrderMenuStyleSheet.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <div id="sideNavigationBar" class="sidenav">
+          <a href="#">Services</a>
+    </div>
 </head>
 <body>
     <form id="form1" runat="server">

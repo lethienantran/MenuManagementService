@@ -75,6 +75,8 @@
     <Content Include="CustomerDisplay.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="MasterStyleSheet.css" />
+    <Content Include="menuPage.aspx" />
+    <Content Include="OrderMenuStyleSheet.css" />
     <Content Include="StartHome.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="UserLogin.aspx" />
@@ -102,6 +104,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menuPage.aspx.cs">
+      <DependentUpon>menuPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menuPage.aspx.designer.cs">
+      <DependentUpon>menuPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrderMenu.Master.cs">
       <DependentUpon>OrderMenu.Master</DependentUpon>
