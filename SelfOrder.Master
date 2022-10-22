@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="MasterStyleSheet.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <div class="topNav">
+        <a href="#">HOME</a>
+        <a href="#">UPDATES</a>
+    </div>
 </head>
 <body>
     <form id="form1" runat="server">
