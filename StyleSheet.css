@@ -1,2 +1,8 @@
 ﻿body {
 }
+.roundedButton {
+    border-radius: 10px;
+    background-color: #f75340;
+    border-style:none;
+    font-size:23px;
+}

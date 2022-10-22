@@ -13,5 +13,20 @@ namespace SelfOrderManagementSystem
         {
 
         }
+
+        protected void registerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void menuButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
