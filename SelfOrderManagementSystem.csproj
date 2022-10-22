@@ -72,6 +72,7 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="MasterStyleSheet.css" />
+    <Content Include="StartHome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,17 +84,16 @@
     <Compile Include="SelfOrder.Master.designer.cs">
       <DependentUpon>SelfOrder.Master</DependentUpon>
     </Compile>
-    <Compile Include="test.Master.cs">
-      <DependentUpon>test.Master</DependentUpon>
+    <Compile Include="StartHome.aspx.cs">
+      <DependentUpon>StartHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="test.Master.designer.cs">
-      <DependentUpon>test.Master</DependentUpon>
+    <Compile Include="StartHome.aspx.designer.cs">
+      <DependentUpon>StartHome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="test.Master" />
     <Content Include="SelfOrder.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
