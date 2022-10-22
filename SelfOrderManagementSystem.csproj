@@ -67,9 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
+    <Content Include="App_Data\db.mdf" />
+    <Content Include="App_Data\db_log.ldf">
+      <DependentUpon>db.mdf</DependentUpon>
     </Content>
     <Content Include="Home.aspx" />
     <Content Include="MasterStyleSheet.css" />
