@@ -33,6 +33,15 @@ namespace SelfOrderManagementSystem
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// allButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button allButton;
+
+        /// <summary>
         /// repeater control.
         /// </summary>
         /// <remarks>
@@ -42,31 +51,13 @@ namespace SelfOrderManagementSystem
         protected global::System.Web.UI.WebControls.Repeater repeater;
 
         /// <summary>
-        /// orderTotalLabel control.
+        /// MenuLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label orderTotalLabel;
-
-        /// <summary>
-        /// cancelOrderButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cancelOrderButton;
-
-        /// <summary>
-        /// checkoutButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button checkoutButton;
+        protected global::System.Web.UI.WebControls.Label MenuLabel;
 
         /// <summary>
         /// itemRepeater control.

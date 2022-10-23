@@ -16,51 +16,40 @@
 <body>
     <form id="form1" runat="server">
         <div class="sidenav">
-            
+            <asp:Button ID="allButton" runat="server" UseSubmitBehavior="False" CommandName="CategoryClick" Text="All" class="sidenavButton" />
+            <br />
             <asp:Repeater ID="repeater" runat="server" OnItemCommand="Repeater1_ItemCommand">
                 <ItemTemplate>
-                    <asp:Button ID="CategoryButton" runat="server" UseSubmitBehavior="False" CommandName="CategoryClick" Text='<%#Eval("CategoryName") %>' />
+                    <br />
+                    <asp:Button ID="CategoryButton" runat="server" UseSubmitBehavior="False" CommandName="CategoryClick" Text='<%#Eval("CategoryName") %>' class="sidenavButton" />
                     <br />
                 </ItemTemplate>
             </asp:Repeater>    
 
         </div>
         <div class="topNav">
-            <table align="left" style="padding-top: 20px; padding-left:200px; font-family: Trebuchet MS,sans-serif; font-size: 20px">
+            <table align ="center" style="margin-top:20px" >
                 <tr>
                     <td>
-                        &nbsp;
-                        <asp:Label ID="orderTotalLabel" runat="server" Text="Order Total:" style="color: white; font-size: 20px"></asp:Label>
-                    </td>
-                </tr>
-            </table>
-            <table align ="right" >
-                <tr>
-                    <td>
-                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" class ="customerButton" OnClick="cancelOrderButton_Click"/>
-                    </td>
-                    <td>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" class="customerButton" OnClick="checkoutButton_Click"/>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <asp:Label ID="MenuLabel" runat="server" Text="Menu" class="menuLabel"></asp:Label>
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="menuDiv">
-            <table>
+        <div align: right; class="menuDiv">
+            <table align: right style="background-color: transparent">
+
                 <tr>
                     <td>
                         <asp:Repeater ID="itemRepeater" runat="server" OnItemCommand="itemRepeater_ItemCommand">
                             <ItemTemplate>
                                 <table>
+                                    <br />
                                     <tr>
                                         <td>
                                             <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>'></asp:Label>
+                                               
                                         </td>
-
-                                    </tr>
-                                    <tr>
                                         <td >
                                             <asp:Label ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription") %>'></asp:Label>
                                         </td>
@@ -69,11 +58,12 @@
                                             <asp:Label ID="itemPriceLabel" runat="server" Font-Bold="true" Font-Italic="true" Text='<%# Eval("ItemPrice") %>'></asp:Label>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:Button ID="OrderButton" runat="server" UseSubmitBehavior="False" CommandName="OrderClick" Text="Order" />
-                                        </td>
-                                    </tr>
+
+  
+
+                                    
+                                    
+
                                 </table>
                             </ItemTemplate>
                         </asp:Repeater>

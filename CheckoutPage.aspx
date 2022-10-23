@@ -28,15 +28,27 @@
             <asp:Table ID="Table1" runat="server" class="doubleCheckTable">
                 
                 <asp:TableHeaderRow>
-                    <asp:TableCell style="width: 65%" class="headerCell"> Item</asp:TableCell>
+                    <asp:TableCell style="width: 55%" class="headerCell"> Item</asp:TableCell>
                     <asp:TableCell style="width: 20%;" class="headerCell">Quantity</asp:TableCell>
                     <asp:TableCell style="width: 20%;" class="headerCell">Price</asp:TableCell>
+                    <asp:TableCell style="width: 10%;" class="headerCell">Delete</asp:TableCell>
                 </asp:TableHeaderRow>
 
                 <asp:TableRow>
-                    <asp:TableCell style="border: 1px solid black">Big Mac</asp:TableCell>
-                    <asp:TableCell style="border: 1px solid black">2</asp:TableCell>
-                    <asp:TableCell style="border: 1px solid black">$10.00</asp:TableCell>
+                    <asp:TableCell class ="itemCell">Big Mac</asp:TableCell>
+                    <asp:TableCell class ="itemCell">
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem Text="0" value="0"></asp:ListItem>
+                            <asp:ListItem Text="1" value="1"></asp:ListItem>
+                            <asp:ListItem Text="2" value="2"></asp:ListItem>
+                            <asp:ListItem Text="3" value="3"></asp:ListItem>
+                            <asp:ListItem Text="4" value="4"></asp:ListItem>
+                        </asp:DropDownList>
+                    </asp:TableCell>  
+                    <asp:TableCell class ="itemCell">$10.00</asp:TableCell>
+                    <asp:TableCell style="text-align: center">
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/trashImage/3058-200.png" Height="17px" Width="17px" ImageAlign="Middle" />
+                    </asp:TableCell>
                 </asp:TableRow>
 
 

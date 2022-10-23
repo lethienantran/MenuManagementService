@@ -77,6 +77,8 @@
     <Content Include="OrderMenuStyleSheet.css" />
     <Content Include="StartHome.aspx" />
     <Content Include="StyleSheet.css" />
+    <Content Include="checkImage\tickpng.parspng.com-2.png" />
+    <Content Include="trashImage\3058-200.png" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserRegistration.aspx" />
     <Content Include="Web.config" />

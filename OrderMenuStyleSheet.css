@@ -1,8 +1,8 @@
 ﻿
 .menuDiv {
-    width: 100%;
+    width: calc(100%-200px);
     height: 100%;
-    border: 1px solid yellow;
+    border: 1px solid red;
     left: 200px;
     top: 75px;
     position: fixed;
@@ -55,6 +55,23 @@
             color: grey;
         }
 
+.sidenavButton {
+    border-style: none;
+    width: 200px;
+    height:75px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: "Trebuchet MS",sans-serif;
+    background-color: #111;
+}
+.sidenavButton:hover{
+    background-color:grey;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -68,4 +85,22 @@
         .topNav {
             font-size: 18px;
         }
+}
+.menuLabel{
+    color: white;
+    border: solid 1px black;
+    font-size: 30px;
+    font-family:'Trebuchet MS',sans-serif;
+    
+}
+
+.itemTable {
+    
+}
+
+.headerCell {
+    background-color: gray;
+    color: white;
+    border: solid 1px black;
+    font-size: 20px;
 }

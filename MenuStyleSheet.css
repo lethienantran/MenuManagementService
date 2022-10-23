@@ -8,6 +8,10 @@
     background-color: #f75340;
     border-style: none;
     font-size: 16px;
+    transition 0.3s;
+}
+.roundedButton:hover {
+    background-color: gray;
 }
 .menuDiv{
     float:right;
