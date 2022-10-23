@@ -28,7 +28,7 @@
 
         </div>
         <div class="topNav">
-            <table align ="center" style="margin-top:20px" >
+            <table  align ="center" style="margin-top:20px" >
                 <tr>
                     <td>
                         <asp:Label ID="MenuLabel" runat="server" Text="Menu" class="menuLabel"></asp:Label>
@@ -37,7 +37,7 @@
             </table>
         </div>
         <div align: right; class="menuDiv">
-            <table align: right style="background-color: transparent">
+            <table class="organizeMenuTable">
 
                 <tr>
                     <td>
@@ -47,22 +47,17 @@
                                     <br>
                                     <tr>
                                         <td>
-                                            <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>'></asp:Label>
+                                            <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>' style="width: 50%"></asp:Label>
                                                
                                         </td>
-                                        <td >
-                                            <asp:Label ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription") %>'></asp:Label>
+                                        <td>
+                                            <asp:Label ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription")%>' style="width: 30%"></asp:Label>
                                         </td>
-                                        <td >
-                                            <asp:Label ID="currenyLabel" runat="server"  Font-Bold="true" Font-Italic="true" Text="$"></asp:Label>
+                                        <td>
+                                            <asp:Label ID="currenyLabel" runat="server"  Font-Bold="true" Font-Italic="true" Text="$" align="right"></asp:Label>
                                             <asp:Label ID="itemPriceLabel" runat="server" Font-Bold="true" Font-Italic="true" Text='<%# Eval("ItemPrice") %>'></asp:Label>
                                         </td>
                                     </tr>
-
-  
-
-                                    
-                                    
 
                                 </table>
                             </ItemTemplate>
