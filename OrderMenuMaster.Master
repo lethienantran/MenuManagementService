@@ -16,36 +16,15 @@
 <body>
     <form id="form1" runat="server">
         <div class="sidenav">
-        <a href="#">Testingt</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+            
+            <asp:Repeater ID="repeater" runat="server" OnItemCommand="Repeater1_ItemCommand">
+                <ItemTemplate>
+                    <asp:Button ID="CategoryButton" runat="server" UseSubmitBehavior="False" CommandName="CategoryClick" Text='<%#Eval("CategoryName") %>' />
+                    <br />
+                </ItemTemplate>
+            </asp:Repeater>    
 
-    </div>
+        </div>
         <div class="topNav">
             <table align="left" style="padding-top: 20px; padding-left:200px; font-family: Trebuchet MS,sans-serif; font-size: 20px">
                 <tr>
@@ -58,17 +37,49 @@
             <table align ="right" >
                 <tr>
                     <td>
-                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" CssClass ="customerButton"/>
+                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" class ="customerButton" OnClick="cancelOrderButton_Click"/>
                     </td>
                     <td>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" CssClass="customerButton"/>
+                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" class="customerButton" OnClick="checkoutButton_Click"/>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     </td>
                 </tr>
             </table>
+        </div>
+        <div class="menuDiv">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Repeater ID="itemRepeater" runat="server" OnItemCommand="itemRepeater_ItemCommand">
+                            <ItemTemplate>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>'></asp:Label>
+                                        </td>
 
-       
+                                    </tr>
+                                    <tr>
+                                        <td >
+                                            <asp:Label ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription") %>'></asp:Label>
+                                        </td>
+                                        <td >
+                                            <asp:Label ID="currenyLabel" runat="server"  Font-Bold="true" Font-Italic="true" Text="$"></asp:Label>
+                                            <asp:Label ID="itemPriceLabel" runat="server" Font-Bold="true" Font-Italic="true" Text='<%# Eval("ItemPrice") %>'></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="OrderButton" runat="server" UseSubmitBehavior="False" CommandName="OrderClick" Text="Order" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

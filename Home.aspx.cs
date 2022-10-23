@@ -75,7 +75,7 @@ namespace SelfOrderManagementSystem
             }
             else
             {
-                Response.Redirect("Menu.aspx");//TODO: redirect to start order
+                Response.Redirect("StartOrderDisplay.aspx");//TODO: redirect to start order
             }
         }
     }

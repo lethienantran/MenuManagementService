@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         
         <div align="center">
-            <asp:Button ID="startOrderButton" runat="server" Text="START ORDER" class="startOrderButton"/>
+            <asp:Button ID="startOrderButton" runat="server" Text="START ORDER" class="startOrderButton" OnClick="startOrderButton_Click"/>
         </div>
         
 

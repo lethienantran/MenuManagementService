@@ -6,7 +6,7 @@
     <div align="center">
         <h1>SELF ORDER <br />SERVICE</h1>
     </div>
-    <table align="center">
+    <table align="center" >
         <tr>
             <td>
                 <asp:Button ID="registerButton" runat="server" Text="REGISTER" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" OnClick="registerButton_Click" />
