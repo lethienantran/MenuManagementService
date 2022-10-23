@@ -12,9 +12,9 @@
 <body>
     <form id="form1" runat="server">
          <div class="topNav">
-
+        <%-- 
         <strong><a href="StartHome.aspx">HOME</a></strong>
-        <strong><a href="#">UPDATES</a></strong>
+        <strong><a href="">UPDATES</a></strong> --%>
 
         <div class="loginNavDiv">
             <table>

@@ -6,18 +6,26 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="OrderMenuStyleSheet.css" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+       <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
+    
+
 
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="topNav" class="topNav" style="padding-top: 25px">
+        <div class="topNav">
             &nbsp
-            <asp:Button ID="backButton" runat="server" Text="Go Back" Class="customerButton" />
+            <asp:Button ID="backButton" runat="server" Text="Go Back" Class="customerButton" OnClick="backButton_Click" />
+        </div>
+        <div class ="PriceSummaryTable"> 
+            <asp:Label ID="totalPrice" runat="server" style="font-size: 35px;" Text="Total: $"></asp:Label>
+            <asp:Button ID="submitOrderButton" runat="server" style="font-size: 20px;" Text="Submit Order" class="submitOrderButton" OnClick="submitOrderButton_Click"/>
         </div>
 
+        <%-- 
         <div class="centerDiv">
-            <asp:Table ID="Table1" runat="server" class="checkoutTable">
+            <asp:Table ID="Table1" runat="server" class="doubleCheckTable">
                 
                 <asp:TableHeaderRow>
                     <asp:TableCell style="width: 65%" class="headerCell"> Item</asp:TableCell>
@@ -35,72 +43,7 @@
                 <asp:TableRow>
                     <asp:TableCell>Test</asp:TableCell>
                 </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>Test</asp:TableCell>
-                </asp:TableRow>
+                
                 <asp:TableRow>
                     <asp:TableCell>LAST</asp:TableCell>
                 </asp:TableRow>
@@ -108,22 +51,24 @@
 
             </asp:Table>  
         </div>
+        
 
         <div class="checkoutDiv">
-            <table>
+            <table class="checkOutTable">
                 <tr>
                     <td>
-                        <asp:Label ID="orderPriceLabel" runat="server" Text="Total: " Style="color:Black; font-size: 20px"></asp:Label>
+                        <asp:Label ID="orderPriceLabel" runat="server" Text="Total: " Style="color:Black; font-size: 30px; text-align:right"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td >
                         <br/>
-                        <asp:Button ID="submitOrderButton" runat="server" Text="Submit Order" class ="customerButton"/>
+                        <asp:Button ID="submitOrderButton" runat="server" Text="Submit Order" class ="checkOutButton"  />
                     </td>
                 </tr>
             </table>
         </div>
+            --%>
 
     </form>
 </body>

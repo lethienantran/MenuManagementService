@@ -122,5 +122,15 @@ namespace SelfOrderManagementSystem
                 cmd.ExecuteNonQuery();
             }
         }
+
+        protected void checkoutButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CheckoutPage.aspx");
+        }
+
+        protected void cancelOrderButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StartOrderDisplay.aspx");
+        }
     }
 }
