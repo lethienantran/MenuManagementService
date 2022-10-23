@@ -44,7 +44,7 @@
                         <asp:Repeater ID="itemRepeater" runat="server" OnItemCommand="itemRepeater_ItemCommand">
                             <ItemTemplate>
                                 <table>
-                                    <br />
+                                    <br>
                                     <tr>
                                         <td>
                                             <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>'></asp:Label>
