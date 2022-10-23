@@ -14,7 +14,7 @@ namespace SelfOrderManagementSystem
     public partial class OrderMenuMaster : System.Web.UI.MasterPage
     {
         string CS = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        int userID;
+        int userID,id;
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(CS);
@@ -28,6 +28,7 @@ namespace SelfOrderManagementSystem
             repeater.DataBind();
             itemRepeater.DataSource = dt;
             itemRepeater.DataBind();
+
         }
         protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
@@ -64,9 +65,10 @@ namespace SelfOrderManagementSystem
 
         protected void itemRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            /*switch (e.CommandName)
+            switch (e.CommandName)
             {
                 case "OrderClick":
+                    id = Convert.ToInt32(Request.QueryString["id"].ToString());
                     userID = Convert.ToInt32(Session["UserID"]);
                     DataTable dtOrder = getData("select * from MealOrder where UserID = " + userID + " and OrderID = 1");
 
@@ -74,11 +76,51 @@ namespace SelfOrderManagementSystem
                     {
                         DataRow dr = dtOrder.Rows[0];
                         DataTable dtOrderItem = getData("select * from OrderItem where ItemMealOrderID = " + Convert.ToInt32(dr["MealOrderID"].ToString()) + " and " + "ItemMealID" + "");
+                        if(dtOrderItem.Rows.Count > 0)
+                        {
+                            insertData("Update OrderItem set quantity = quantity + 1 where ItemMealID = " + id + " and ItemMealOrderID = " + Convert.ToInt32(dr["MealOrderID"].ToString()));
+                        }
+                        else
+                        {
+                            addOrderItem(dr["MealOrderID"].ToString(), dr["userID"].ToString());
+                        }
                     }
+                    
+                    else if (dtOrder.Rows.Count == 0)
+                    {
+                        insertData("insert into MealOrder (userID, OrderID) values (" + userID + ", 1)");
+
+                        DataTable newOrder = getData("select * from MealOrder where UserID = " + userID + " and OrderID = 1");
+                        DataRow newOrderRow = newOrder.Rows[0];
+
+                        addOrderItem(newOrderRow["MealOrderID"].ToString(), newOrderRow["userID"].ToString());
+                    }
+                   
                     break;
                 default:
                     break;
-            }*/
+            }
+        }
+        private void addOrderItem(string orderID, string userID)
+        {
+            string query = "insert into OrderItem (ItemMealID, ItemMealOrderID, quantity) values (" + id + "," + orderID + "," + 1 + ")";
+
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        
+        private void insertData(string query)
+        {
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand cmd = new SqlCommand(query,con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }
