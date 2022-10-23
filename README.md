@@ -23,7 +23,7 @@ Features:
  <ul>
   <li> Rating Button (<em><strong>Recommendation will be automatically display</strong></em> to the customers through the number of times that customer order, providing information of <em><strong>low-sales items</strong></em> so 
     user/owner can easily act <em><strong>a better business strategy</em></strong>).</li>
-  <li> Sales Summary (<em><strong>Option</strong></em> to get daily report, monthly report, and quarterly report of sales). </li>
+  <li> Sales Summary (<em><strong>Option</strong></em> to get daily, monthly, and quarterly report of sales). </li>
   <li> Order System (User/Owner have option to let the user <em><strong>order or only viewing the menu/services</strong></em>). </li>
 </ul>
 <h3> UPDATES/COMING SOON </h3>
