@@ -29,6 +29,7 @@ namespace SelfOrderManagementSystem
 
                 welcomeLabel.Visible = true;
                 welcomeLabel.Text = "" + dr["BrandName"];
+                messageLabel.Visible = false;
             }
             else
             {
@@ -57,6 +58,12 @@ namespace SelfOrderManagementSystem
 
                     con.Open();
                     command.ExecuteNonQuery();
+                    messageLabel.Visible = true;
+                    messageLabel.Text = nameText.Text + " is added to the menu";
+                    categoryText.Text = "";
+                    nameText.Text = "";
+                    descriptionText.Text = "";
+                    priceText.Text = "";
                 }
             }
         }

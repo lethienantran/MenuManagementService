@@ -41,7 +41,13 @@
         <tr>
             <td align="center" colspan="2">
                 <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
-                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <asp:Button ID="button1" runat="server" Text="BACK" OnClick="button1_Click" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
+            </td>
+            <td align="center">
                 <asp:Button  ID="submitButton" runat="server" Text="SUBMIT" OnClick="submitButton_Click" CssClass="roundedButton" Height="45px" Width="150px" ForeColor="White" />
             </td>
         </tr>

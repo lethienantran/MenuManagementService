@@ -48,8 +48,14 @@
         <tr>
             <td align="center" colspan="2">
                 <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
-                <br />
-                <asp:Button ID="button" runat="server" Text="REGISTER" OnClick="button_Click" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <asp:Button ID="button1" runat="server" Text="BACK" OnClick="button1_Click" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
+            </td>
+            <td align="center">
+            <asp:Button ID="button" runat="server" Text="REGISTER" OnClick="button_Click" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
             </td>
         </tr>
         </table>

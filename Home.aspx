@@ -39,6 +39,7 @@
                 </td>
             </tr>
         </table>
+        <asp:Label ID="messageLabel" runat="server" ForeColor="Green"></asp:Label>
         <br />
         <asp:Button ID="addButton" runat="server" Text="ADD" CssClass="roundedButton" Font-Size="15px" ForeColor="White" OnClick="addButton_Click" Height="45px" Width="150px"/>
                     &nbsp;&nbsp;

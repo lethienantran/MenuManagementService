@@ -20,10 +20,6 @@
                 <br /><br />            
             </td>
         </tr>
-        <tr>
-            <td>
-                <asp:Button ID="menuButton" runat="server" Text="MENU" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" OnClick="menuButton_Click" />         
-            </td>
-        </tr>
+
     </table>
 </asp:Content>

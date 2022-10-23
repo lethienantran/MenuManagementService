@@ -53,5 +53,10 @@ namespace SelfOrderManagementSystem
 
             return dt;
         }
+
+        protected void button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("StartHome.aspx");
+        }
     }
 }
