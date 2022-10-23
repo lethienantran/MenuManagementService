@@ -4,6 +4,18 @@
     border-style:none;
     font-size:20px;
 }
+
+.customerButton {
+    border-radius: 10px;
+    background-color: #f75340;
+    border-style: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.customerButton:hover{
+    background-color: white;
+}
+
 .adminHomeButton {
     border-radius: 10px;
     background-color: #f75340;
@@ -14,4 +26,13 @@
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 22px;
     border: 1px solid #ddd;
+}
+
+.checkoutDiv {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: pink;
+    width: 20%;
+    height: 12%;
 }

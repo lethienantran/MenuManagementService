@@ -81,6 +81,7 @@
     <Content Include="UserLogin.aspx" />
     <Content Include="UserRegistration.aspx" />
     <Content Include="Web.config" />
+    <Content Include="CheckoutPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerMenu.aspx.cs">
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="UserRegistration.aspx.designer.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutPage.aspx.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckoutPage.aspx.designer.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,8 @@
     <title></title>
     
     <link rel="stylesheet" type="text/css" href="OrderMenuStyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     
@@ -34,13 +36,34 @@
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
 
     </div>
         <div class="topNav">
-            <table>
+            <table align="left" style="padding-top: 15px">
                 <tr>
                     <td>
-                        
+                        &nbsp;
+                        <asp:Label ID="orderTotalLabel" runat="server" Text="Order Total:" style="color: white; font-size: 20px"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+            <table align ="right" style="padding-top: 15px">
+                <tr>
+                    <td>
+                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" class ="customerButton"/>
+                    </td>
+                    <td>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" class="customerButton"/>
+                        &nbsp;
                     </td>
                 </tr>
             </table>
