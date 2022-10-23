@@ -72,6 +72,7 @@
       <DependentUpon>db.mdf</DependentUpon>
     </Content>
     <Content Include="CustomerMenu.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="MasterStyleSheet.css" />
     <Content Include="OrderMenuStyleSheet.css" />
@@ -88,6 +89,9 @@
     </Compile>
     <Compile Include="CustomerMenu.aspx.designer.cs">
       <DependentUpon>CustomerMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

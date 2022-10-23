@@ -16,12 +16,12 @@ namespace SelfOrderManagementSystem
 
         protected void registerButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("UserRegistration.aspx");
         }
 
         protected void loginButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("UserLogin.aspx");
         }
 
         protected void menuButton_Click(object sender, EventArgs e)

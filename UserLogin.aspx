@@ -9,13 +9,20 @@
     <table class="userTable" align="center">
         <tr>
             <td>
+
+                <asp:Label ID="brandLabel" runat="server" Text="Brand:"></asp:Label>
+            </td>
+            <td>
+                <asp:TextBox ID="brandText" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <asp:Label ID="usernameLabel" runat="server" Text="Username:"></asp:Label>
                 &nbsp;&nbsp;
             </td>
             <td>
                 <asp:TextBox ID="usernameText" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="usernameText" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
-                &nbsp;&nbsp;
             </td>
         </tr>
         
@@ -34,6 +41,8 @@
         </tr>
         <tr>
             <td align="center" colspan="2">
+                <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
+                <br />
                 <asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="submitButton_Click" CssClass="roundedButton" />
             </td>
         </tr>

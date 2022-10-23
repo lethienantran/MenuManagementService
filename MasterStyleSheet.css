@@ -1,15 +1,27 @@
 ﻿body {
+    margin:0;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 22px;
     
 }
-.topNav a{
-    text-decoration:none;
-    color:black;
+.topNav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
 }
 .topNav {
-    background-color:pink;
+    overflow: hidden;
+    background-color: black;
+    height: 60px;
 }
-.topNav a:hover{
-    background-color: white
+.topNav a:hover {
+    color: #f75340
+}
+.loginNavDiv{
+    float:right;
 }
