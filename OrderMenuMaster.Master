@@ -15,7 +15,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="mySidenav" class="sidenav">
+        <div class="sidenav">
         <a href="#">Testingt</a>
         <a href="#">About</a>
         <a href="#">Services</a>
@@ -47,7 +47,7 @@
 
     </div>
         <div class="topNav">
-            <table align="left" style="padding-top: 15px">
+            <table align="left" style="padding-top: 20px; padding-left:200px; font-family: Trebuchet MS,sans-serif; font-size: 20px">
                 <tr>
                     <td>
                         &nbsp;
@@ -55,7 +55,7 @@
                     </td>
                 </tr>
             </table>
-            <table align ="right" style="padding-top: 15px">
+            <table align ="right" >
                 <tr>
                     <td>
                         <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" class ="customerButton"/>
@@ -63,7 +63,7 @@
                     <td>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
                         <asp:Button ID="checkoutButton" runat="server" Text="Checkout" class="customerButton"/>
-                        &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     </td>
                 </tr>
             </table>
