@@ -4,8 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center">
-        <h3>Menu</h3>
-        <asp:Button ID="showMenuButton" runat="server" Text="OPEN MENU" Font-Size="15px" CssClass="roundedButton" ForeColor="White" OnClick="showMenuButton_Click" />
+        <asp:Label ID="welcomeLabel" runat="server" Font-Bold="true" Text="" Font-Size="28px" ForeColor="Black"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="showMenuButton" runat="server" Text="OPEN MENU" Font-Size="15px" CssClass="roundedButton" ForeColor="White" OnClick="showMenuButton_Click" Height="45px" Width="150px" />
         <h3>Add/Change Items</h3>
         <table style="border: 1px solid black;">
             <tr >
@@ -37,8 +39,9 @@
                 </td>
             </tr>
         </table>
-        <asp:Button ID="addButton" runat="server" Text="ADD" CssClass="roundedButton" Font-Size="15px" ForeColor="White" OnClick="addButton_Click"/>
+        <br />
+        <asp:Button ID="addButton" runat="server" Text="ADD" CssClass="roundedButton" Font-Size="15px" ForeColor="White" OnClick="addButton_Click" Height="45px" Width="150px"/>
                     &nbsp;&nbsp;
-        <asp:Button ID="deleteButton" runat="server" Text="DELETE" CssClass="roundedButton" Font-Size="15px" ForeColor="White" OnClick="deleteButton_Click"/>
+        <asp:Button ID="deleteButton" runat="server" Text="DELETE" CssClass="roundedButton" Font-Size="15px" ForeColor="White" OnClick="deleteButton_Click" Height="45px" Width="150px"/>
     </div>
 </asp:Content>

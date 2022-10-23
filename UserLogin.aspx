@@ -6,10 +6,9 @@
     <div align="center">
         <h3>Log In</h3>
     </div>
-    <table class="userTable" align="center">
+    <table class="userTable" align="center" style="border:none">
         <tr>
             <td>
-
                 <asp:Label ID="brandLabel" runat="server" Text="Brand:"></asp:Label>
             </td>
             <td>
@@ -43,7 +42,7 @@
             <td align="center" colspan="2">
                 <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
-                <asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="submitButton_Click" CssClass="roundedButton" />
+                <asp:Button  ID="submitButton" runat="server" Text="SUBMIT" OnClick="submitButton_Click" CssClass="roundedButton" Height="45px" Width="150px" ForeColor="White" />
             </td>
         </tr>
     </table>

@@ -20,14 +20,11 @@
             <table>
                 <tr>
                     <td>
-                        <asp:Label ID="welcomeLabel" runat="server" Text="Label"></asp:Label>
-                    </td>
-                    <td>
                         <asp:HyperLink ID="registerHyperLink" runat="server" NavigateUrl="~/UserRegistration.aspx"></asp:HyperLink>
                     </td>
                     <td>
                         <asp:HyperLink ID="loginHyperLink" runat="server" NavigateURL="~/UserLogin.aspx"></asp:HyperLink>
-                        <asp:LinkButton ID="logoutButton" Height ="16px" runat="server" OnClick="logoutButton_Click"></asp:LinkButton>
+                        <asp:LinkButton ID="logoutButton" runat="server" OnClick="logoutButton_Click"></asp:LinkButton>
                     </td>
                 </tr>
             </table>

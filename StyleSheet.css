@@ -31,7 +31,7 @@
 .userTable {
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 22px;
-    border: 1px solid #ddd;
+    border: none;
 }
 /*
 .centerDiv {
