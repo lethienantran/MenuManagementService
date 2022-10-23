@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="SelfOrderManagementSystem.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="MenuStyleSheet.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 191px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topNav">
+             <div class="orderInfo">
+                <table>
+                    <tr>
+                        <td style="color:white" class="auto-style1">
+                            Total Price: $ <asp:Label ID="totalPriceLabel" runat="server" Text="0"></asp:Label>
+                        </td>
+                        <td style="color:white">
+                            &nbsp;<asp:Button ID="checkOutButton" runat="server" Text="CHECK OUT" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
+                        </td>
+                    </tr>
+                </table>
+             </div>
+            <div id="menuDiv">
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Repeater ID="repeater" runat="server">
+                                <ItemTemplate>
+                                    <asp:Label ForeColor="white" ID="categoryNameLabel" runat="server" Text='<%# Eval("CategoryName") %>'></asp:Label>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

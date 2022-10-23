@@ -1,0 +1,43 @@
+﻿body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+.roundedButton {
+    border-radius: 10px;
+    background-color: #f75340;
+    border-style: none;
+    font-size: 16px;
+}
+.menuDiv{
+    float:right;
+}
+.orderInfo {
+    padding-top: 5px;
+    padding-left: 2%;
+    float: left;
+}
+.topNav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.topNav {
+    overflow: hidden;
+    background-color: black;
+    height: 60px;
+}
+
+.topNav a:hover {
+        color: #f75340
+}
+
+.loginNavDiv {
+    float: right;
+}

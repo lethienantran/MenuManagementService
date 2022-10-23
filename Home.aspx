@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center">
+        <h3>Menu</h3>
+        <asp:Button ID="showMenuButton" runat="server" Text="OPEN MENU" Font-Size="15px" CssClass="roundedButton" ForeColor="White" OnClick="showMenuButton_Click" />
         <h3>Add/Change Items</h3>
         <table style="border: 1px solid black;">
             <tr >

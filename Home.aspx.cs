@@ -14,7 +14,6 @@ namespace SelfOrderManagementSystem
     public partial class Home : System.Web.UI.Page
     {
         string CS = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
-        int UserID;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -65,6 +64,18 @@ namespace SelfOrderManagementSystem
                     con.Open();
                     command.ExecuteNonQuery();
                 }
+            }
+        }
+
+        protected void showMenuButton_Click(object sender, EventArgs e)
+        {
+            if (Session["UserID"] == null)
+            {
+                Response.Redirect("StartHome.aspx");
+            }
+            else
+            {
+                Response.Redirect("Menu.aspx");//TODO: redirect to start order
             }
         }
     }

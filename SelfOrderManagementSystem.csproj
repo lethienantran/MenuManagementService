@@ -75,6 +75,8 @@
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="MasterStyleSheet.css" />
+    <Content Include="Menu.aspx" />
+    <Content Include="MenuStyleSheet.css" />
     <Content Include="OrderMenuStyleSheet.css" />
     <Content Include="StartHome.aspx" />
     <Content Include="StyleSheet.css" />
@@ -100,6 +102,20 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.Master.cs">
+      <DependentUpon>Menu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.Master.designer.cs">
+      <DependentUpon>Menu.Master</DependentUpon>
     </Compile>
     <Compile Include="OrderMenuMaster.Master.cs">
       <DependentUpon>OrderMenuMaster.Master</DependentUpon>
@@ -147,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OrderMenuMaster.Master" />
+    <Content Include="Menu.Master" />
     <None Include="packages.config" />
     <Content Include="SelfOrder.Master" />
     <None Include="Web.Debug.config">
