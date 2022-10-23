@@ -88,6 +88,13 @@ namespace SelfOrderManagementSystem
 
                     con.Open();
                     command.ExecuteNonQuery();
+
+                    messageLabel.Visible = true;
+                    messageLabel.Text = nameText.Text + " is deleted from the menu";
+                    categoryText.Text = "";
+                    nameText.Text = "";
+                    descriptionText.Text = "";
+                    priceText.Text = "";
                 }
             }
         }

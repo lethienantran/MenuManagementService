@@ -47,15 +47,15 @@
                                     <br>
                                     <tr>
                                         <td>
-                                            <asp:Label ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>' style="width: 50%"></asp:Label>
+                                            <asp:Label  ID="itemNameLabel" runat="server" Font-Bold="true" Text='<%# Eval("ItemName") %>' style="width: 50%; font-family: 'Trebuchet MS', sans-serif"></asp:Label>
                                                
                                         </td>
                                         <td>
-                                            <asp:Label ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription")%>' style="width: 30%"></asp:Label>
+                                            <asp:Label  class= "itemMenu" ID="itemDescriptionLabel" Font-Italic="true" runat="server" Text='<%# Eval("ItemDescription")%>' style="width: 30%; font-family: 'Trebuchet MS', sans-serif"></asp:Label>
                                         </td>
                                         <td>
-                                            <asp:Label ID="currenyLabel" runat="server"  Font-Bold="true" Font-Italic="true" Text="$" align="right"></asp:Label>
-                                            <asp:Label ID="itemPriceLabel" runat="server" Font-Bold="true" Font-Italic="true" Text='<%# Eval("ItemPrice") %>'></asp:Label>
+                                            <asp:Label style="font-family: 'Trebuchet MS', sans-serif" class= "itemMenu" ID="currenyLabel" runat="server"  Font-Bold="true" Font-Italic="true" Text="$" align="right"></asp:Label>
+                                            <asp:Label  style="font-family: 'Trebuchet MS', sans-serif" class= "itemMenu" ID="itemPriceLabel" runat="server" Font-Bold="true" Font-Italic="true" Text='<%# Eval("ItemPrice") %>'></asp:Label>
                                         </td>
                                     </tr>
 

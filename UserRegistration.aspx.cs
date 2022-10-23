@@ -34,7 +34,7 @@ namespace SelfOrderManagementSystem
                         cmd.ExecuteNonQuery();
 
                         messageLabel.BackColor = System.Drawing.ColorTranslator.FromHtml("#4dff4d");
-                        messageLabel.Text = "Successfully Registered" + usernameText.Text.ToString();
+                        messageLabel.Text = "Successfully Registered " + usernameText.Text.ToString();
                     }
                 }
                 else
