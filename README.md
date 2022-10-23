@@ -40,7 +40,7 @@ Features:
 <li> Visual Studio 2022 </li> 
 <li> CSS </li>
 </ul>
-<h3> WebApp Images </h3> 
+<h3> Screenshots </h3> 
 <h2 align="center"> Login Account For User/Owner </h2>
 <img src="DubHackImage/LogIn.PNG">
 <h2 align="center"> Create Account For User/Owner </h2>
