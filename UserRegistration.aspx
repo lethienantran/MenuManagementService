@@ -49,7 +49,7 @@
             <td align="center" colspan="2">
                 <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
-                <asp:Button ID="button" runat="server" Text="Register" OnClick="button_Click" />
+                <asp:Button ID="button" runat="server" Text="Register" OnClick="button_Click" CssClass ="roundedButton"/>
             </td>
         </tr>
         </table>
