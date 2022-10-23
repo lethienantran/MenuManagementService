@@ -47,7 +47,14 @@
     width: 100%;
     height: 500px;
     table-layout: fixed;
-    overflow: auto;
+}
+.headerCell {
+    background-color: pink;
+    align-self: auto;
+    align-content: center;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
 }
 
 .checkoutDiv {

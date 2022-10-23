@@ -20,9 +20,9 @@
             <asp:Table ID="Table1" runat="server" class="checkoutTable">
                 
                 <asp:TableHeaderRow>
-                    <asp:TableCell style="width: 65%; padding-left: 32%; border: 1px solid black; position: sticky; top: 0"> Item</asp:TableCell>
-                    <asp:TableCell style="width: 25%; padding-left: 150px; border: 1px solid black; position: sticky; top: 0">Quantity</asp:TableCell>
-                    <asp:TableCell style="width: 10%; padding-left: 50px; border: 1px solid black; position: sticky; top: 0">Price</asp:TableCell>
+                    <asp:TableCell style="width: 65%" class="headerCell"> Item</asp:TableCell>
+                    <asp:TableCell style="width: 20%;" class="headerCell">Quantity</asp:TableCell>
+                    <asp:TableCell style="width: 20%;" class="headerCell">Price</asp:TableCell>
                 </asp:TableHeaderRow>
 
                 <asp:TableRow>
