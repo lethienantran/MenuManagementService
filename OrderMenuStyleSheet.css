@@ -100,7 +100,11 @@
 .organizeMenuTable td{
     font-size: 25px;
     text-align: left;
+    font-family:'Trebuchet MS', sans-serif;
 }
 .organizeMenuTable{
     margin-bottom:40px;
+}
+.itemMenu {
+    font-family: 'Trebuchet MS', sans-serif;
 }
