@@ -1,4 +1,12 @@
 ﻿
+.menuDiv {
+    width: 100%;
+    height: 100%;
+    border: 1px solid yellow;
+    left: 200px;
+    top: 75px;
+    position: fixed;
+}
 .topNav {
     width: 100%;
     height: 75px;
@@ -11,6 +19,9 @@
 
 }
 
+#InLine{
+    display:inline;
+}
 
 .sidenav {
     height: 100%;
