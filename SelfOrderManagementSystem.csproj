@@ -74,9 +74,12 @@
     <Content Include="MasterStyleSheet.css" />
     <Content Include="Menu.aspx" />
     <Content Include="MenuStyleSheet.css" />
+    <Content Include="OrderCompletePage.aspx" />
     <Content Include="OrderMenuStyleSheet.css" />
     <Content Include="StartHome.aspx" />
     <Content Include="StyleSheet.css" />
+    <Content Include="checkImage\tickpng.parspng.com-2.png" />
+    <Content Include="trashImage\3058-200.png" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserRegistration.aspx" />
     <Content Include="Web.config" />
@@ -114,6 +117,13 @@
     </Compile>
     <Compile Include="Menu.Master.designer.cs">
       <DependentUpon>Menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OrderCompletePage.aspx.cs">
+      <DependentUpon>OrderCompletePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderCompletePage.aspx.designer.cs">
+      <DependentUpon>OrderCompletePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrderMenuMaster.Master.cs">
       <DependentUpon>OrderMenuMaster.Master</DependentUpon>

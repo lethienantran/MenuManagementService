@@ -58,11 +58,11 @@
             <table align ="right" >
                 <tr>
                     <td>
-                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" class ="customerButton"/>
+                        <asp:Button ID="cancelOrderButton" runat="server" Text="Cancel Order" CssClass ="customerButton"/>
                     </td>
                     <td>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" class="customerButton"/>
+                        <asp:Button ID="checkoutButton" runat="server" Text="Checkout" CssClass="customerButton"/>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     </td>
                 </tr>

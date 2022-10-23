@@ -11,15 +11,15 @@
     background-color: white;
     border-style: none;
     font-size: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
     width: 200px;
     height:50px;
     margin-top:10px;
    
 }
-.customerButton:hover{
-    background-color: grey;
-}
+    .customerButton :hover{
+        background-color: grey;
+    }
 
 .adminHomeButton {
     border-radius: 10px;
@@ -43,7 +43,7 @@
     width: 70%;
     height: 50%;
     position: fixed;
-    background-color: pink;
+    background-color: lightgray;
     overflow: auto;
 }
 .checkoutTable {
@@ -53,22 +53,41 @@
     table-layout: fixed;
 }
 .headerCell {
-    background-color: pink;
-    align-self: auto;
-    align-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
     border: 1px solid black;
     position: sticky;
     top: 0;
 }
+.itemCell {
+    background-color: white;
+    text-align: center;
+    border: 1px thin black;
+}
 
 .checkoutDiv {
-    bottom: 0;
-    right: 0;
+    bottom: 13%;
+    position: absolute;
+    left: 15%;
+    margin: auto;
     position: fixed;
-    background-color: pink;
     width: 20%;
     height: 12%;
 }
+
+.submitOrderButton {
+    color: white;
+    background-color: black;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+    .submitOrderButton :hover{
+        background-color: white;
+    }
 
 /*
     stylesheet for StartOrderDisplay.aspx
