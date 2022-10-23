@@ -13,5 +13,15 @@ namespace SelfOrderManagementSystem
         {
 
         }
+
+        protected void backButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerMenu.aspx");
+        }
+
+        protected void submitOrderButton_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Submit Order Successfully. Please Pay At The Register!');window.location ='StartOrderDisplay.aspx';",true);
+        }
     }
 }
