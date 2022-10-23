@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center">
         <h3>Create Account</h3>
-    </div>
-    <table class="userTable" align="center">
+    </div> 
+    <table class="userTable" align="center" style="border:none">
         <tr>
             <td>
                 <asp:Label ID="brandLabel" runat="server" Text="Brand:"></asp:Label>
@@ -49,7 +49,7 @@
             <td align="center" colspan="2">
                 <asp:Label ID="messageLabel" runat="server" ForeColor="Red"></asp:Label>
                 <br />
-                <asp:Button ID="button" runat="server" Text="Register" OnClick="button_Click" />
+                <asp:Button ID="button" runat="server" Text="REGISTER" OnClick="button_Click" CssClass="roundedButton" ForeColor="White" Height="45px" Width="150px" />
             </td>
         </tr>
         </table>

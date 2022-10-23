@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -16,6 +17,23 @@ namespace SelfOrderManagementSystem
         string CS = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["UserID"] != null)
+            {
+
+                SqlConnection con = new SqlConnection(CS);
+                SqlDataAdapter da = new SqlDataAdapter("select * from users where" +
+                    " UserID = " + Convert.ToInt32(Session["UserID"].ToString()), con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DataRow dr = dt.Rows[0];
+
+                welcomeLabel.Visible = true;
+                welcomeLabel.Text = "" + dr["BrandName"];
+            }
+            else
+            {
+                Response.Redirect("StartHome.aspx");
+            }
 
         }
 

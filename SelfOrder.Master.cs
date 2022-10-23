@@ -31,8 +31,6 @@ namespace SelfOrderManagementSystem
                 loginHyperLink.Visible = false;
                 registerHyperLink.Visible = false;
 
-                welcomeLabel.Visible = true;
-                welcomeLabel.Text = "" + dr["BrandName"];
             }
 
             else
@@ -46,8 +44,6 @@ namespace SelfOrderManagementSystem
                 registerHyperLink.Visible = true;
                 registerHyperLink.Text = "Register";
 
-                welcomeLabel.Visible = false;
-                welcomeLabel.Text = "";
 
             }
         }
@@ -55,11 +51,12 @@ namespace SelfOrderManagementSystem
         {
             Session.Remove("UserID");
             logoutButton.Visible = false;
-            welcomeLabel.Visible = false;
             registerHyperLink.Visible = true;
             registerHyperLink.Text = "Register";
             loginHyperLink.Visible = true;
             loginHyperLink.Text = "Login";
+
+            Response.Redirect("StartHome.aspx");
         }
     }
 }
