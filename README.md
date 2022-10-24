@@ -2,7 +2,7 @@
 <h1 align="center"> &nbsp;&nbsp;MENU MANAGEMENT SERVICE <br> (DUBHACKS'22 CONNECTIVITY TRACK) </h1></center>
 <h2 align="center"> AUTHOR: LE THIEN AN TRAN, LE DUY AN TRAN, ADALBERTO ACOSTA </h2>
 <p >
-<img src="DubHackImage/StartHome.PNG"> 
+<img src="DubHackImage/StartHome1.PNG"> 
 </p>
 <h3> ABOUT IT </h3> 
 <p>
