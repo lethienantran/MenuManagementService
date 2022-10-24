@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div align="center">
-        <h1>SELF ORDER <br />SERVICE</h1>
+        <h1>MENU MANAGEMENT <br />SERVICE</h1>
     </div>
     <table align="center" >
         <tr>
