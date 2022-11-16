@@ -4,7 +4,7 @@
 <p >
 <img src="DubHackImage/StartHome1.PNG"> 
 </p>
-<h3> ABOUT IT </h3> 
+<h3> ABOUT THE PROJECT </h3> 
 <p>
 This is a web app that can be used in kiosk, and online website. The user will probably be an owner of a restaurant, boba shop, or any stores. This web app will allows
  and help the user organize their menu and display menu to the customer on the kiosk or online website.
